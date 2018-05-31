@@ -1,0 +1,24 @@
+{
+  "name": "tddchai",
+  "version": "1.0.0",
+  "description": "A test-driven dev project using chai",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Silvester56/tddchai.git"
+  },
+  "author": "Silvester56",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Silvester56/tddchai/issues"
+  },
+  "homepage": "https://github.com/Silvester56/tddchai#readme"
+}
