@@ -29,6 +29,10 @@ describe('Number', function() {
 
     expect(number).to.be.an('object');
   });
+
+  it('should be zero', function() {
+    expect(tools.average([])).to.be.equal(0);
+  });
 });
 
 describe('String', function() {
@@ -45,5 +49,13 @@ describe('String', function() {
     var str = "vofdfdouiucvpozlkneimvdslfopeluenrovhjdbezuis";
 
     expect(str.length < tools.removeDoubles(str).length).to.be.false;
+  });
+
+  it('should become an Array', function() {
+    var str = "vofdfdouiucvpozlkneimvdslfopeluenrovhjdbezuis";
+    var number = Math.floor(Math.random() * 50);
+
+    expect(tools.splitInParts(str, number)).to.be.an('array');
+    expect(tools.splitInParts(str, number).length).to.be.equal(number);
   });
 });
