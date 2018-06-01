@@ -28,6 +28,8 @@ describe('Number', function() {
     var number = tools.toComplex(3, 5);
 
     expect(number).to.be.an('object');
+	 expect(number).to.have.property('realPart');
+    expect(number).to.have.property('imaginaryPart');
   });
 
   it('should be zero', function() {
